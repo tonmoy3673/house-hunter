@@ -63,7 +63,6 @@ const Sidebar = () => {
         }  md:translate-x-0  transition duration-200 ease-in-out`}
       >
         <div>
-          {/* Branding & Profile Info */}
           <h2 className="text-3xl cursor-pointer font-semibold text-center">
             <Link
               to="/"
@@ -73,7 +72,6 @@ const Sidebar = () => {
             </Link>
           </h2>
 
-          {/* Nav Items */}
           <div className="flex flex-col justify-between flex-1 mt-6">
             <nav>
               {role && role !== "requested" ? (
@@ -87,10 +85,7 @@ const Sidebar = () => {
 
         <div>
           <hr />
-          <PrimaryButton
-            // handler={logout}
-            classes="flex block w-full rounded-full items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform"
-          >
+          <PrimaryButton className="flex block w-full rounded-full items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform">
             {/* <ArrowRightOnRectangleIcon className='w-5 h-5' /> */}
 
             <span className="mx-4 font-medium">Logout</span>

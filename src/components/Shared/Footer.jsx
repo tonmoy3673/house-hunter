@@ -17,11 +17,7 @@ const Footer = () => {
             <div>
               <Link href="/">
                 <span className="sr-only">Your Company</span>
-                {/* <img
-                                    className="h-14 w-14"
-                                    src="https://t3.ftcdn.net/jpg/02/47/48/00/360_F_247480017_ST4hotATsrcErAja0VzdUsrrVBMIcE4u.jpg"
-                                    alt=""
-                                /> */}
+
                 <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
                   House Hunter
                 </h2>

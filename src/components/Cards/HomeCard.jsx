@@ -1,3 +1,4 @@
+import { StarOutlineOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const HomeCard = ({ house }) => {

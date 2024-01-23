@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import HomeCard from "../Cards/HomeCard";
-import axios from "axios";
 
 const Houses = () => {
   const [services, setServices] = useState([]);

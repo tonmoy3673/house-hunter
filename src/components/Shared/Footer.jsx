@@ -140,6 +140,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* Copyright and Company Name */}
+          <div className="lg:flex justify-between items-center mt-8 border-t pt-4">
+            <p className="mb-5">
+              &copy; {new Date().getFullYear()} House Hunter. All Rights
+              Reserved.
+            </p>
+            <p>Made with ❤️ by House Hunter</p>
+          </div>
         </div>
       </div>
     </footer>

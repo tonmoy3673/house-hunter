@@ -12,7 +12,6 @@ import AllHouses from "../Pages/Dashboard/AllHouses";
 import ServicesHouse from "../Pages/Houses/Services";
 import axios from "axios";
 import ServiceDetails from "../Pages/Houses/ServiceDetails";
-
 import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([

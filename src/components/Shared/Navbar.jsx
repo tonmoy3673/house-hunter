@@ -1,12 +1,10 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthProvider";
 
 const Navbar = () => {
-  const [user, setUser] = useState({
-    email: "a",
-    id: "",
-  });
+  const { user, logout } = useContext(AuthContext);
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -105,24 +103,15 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/services"
+                to="/houses"
                 style={{ "--i": 2 }}
                 className="menu-btn"
                 onClick={closeMenu}
               >
-                Services
+                Houses
               </Link>
             </li>
-            <li>
-              <Link
-                to="/contact"
-                style={{ "--i": 1 }}
-                className="menu-btn"
-                onClick={closeMenu}
-              >
-                Contact
-              </Link>
-            </li>
+
             {!user?.email && (
               <>
                 <li>

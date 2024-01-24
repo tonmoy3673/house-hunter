@@ -8,10 +8,6 @@ const DashboardLayout = () => {
 
   useEffect(() => {
     setLoading(true);
-    // getRole(user?.email).then(data => {
-    //     setRole(data)
-    //     setLoading(false)
-    // })
   }, []);
 
   return (
